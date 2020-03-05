@@ -1,0 +1,104 @@
+/*reset das propriedades do estilo da pagina*/
+* {
+    box-sizing: border-box;
+}
+/*padding: determinar o espaçamento das bordas da pagina*/
+body {
+    font-family: arial;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/*estruturas do site*/
+.header {
+    padding: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/*overflow: hidden - desabilitar a rodinha do mouse*/
+.nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* hover: quando passar o mouse na tag "a" faça*/
+.nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.nav .alinha-direita {
+    float: right;
+}
+
+/*determinar as dimensões da coluna esuquerda*/
+.leftCol {
+    float: left;
+    width: 75%;
+    
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/*determinar as dimensões da coluna direita*/
+.rightCol {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    
+}
+
+/*Rodapé*/
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+/*forçar a quebra do rodapé para baixo*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Configuração para layout no celular*/
+@media screen and (max-width: 800px) {
+    .leftCol, .rightCol {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-device-width: 400px) {
+    .nav a {
+        float: none;
+        width: 100%;
+    }
+}
